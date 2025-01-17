@@ -34,7 +34,7 @@ namespace OffHandidiotmod
 		public override void Unload()
 		{
 			// Ensure that you unload the UI's event handlers here
-			SlotUI.Unload();
+			SlotUI?.Unload();
 		}
 		internal static void SaveConfig(OffHandConfig configInstance) // yoinked from calamitymod
 		{
