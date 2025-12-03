@@ -78,7 +78,7 @@ namespace OffHandidiotmod
 					getCooldownsMethod = calamityUtilsType.GetMethod("GetDisplayedCooldowns", BindingFlags.Public | BindingFlags.Static);
 
 					//calamity config's cooldownrack setting
-					calamityConfigInstance = Calamity.GetConfig("CalamityConfig");
+					calamityConfigInstance = Calamity.GetConfig("CalamityClientConfig");
 					cooldownDisplayProperty = calamityConfigInstance.GetType().GetProperty("CooldownDisplay");
 				}
 				catch (Exception exception)
