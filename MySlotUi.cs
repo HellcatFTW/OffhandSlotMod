@@ -65,9 +65,9 @@ namespace OffHandidiotmod
                 }
                 try
                 {
-                    float cooldownDisplaySetting = (float)Activation.cooldownDisplayProperty.GetValue(Activation.calamityConfigInstance);
+                    int cooldownDisplaySetting = (int) Activation.cooldownDisplayProperty.GetValue(Activation.calamityConfigInstance);
 
-                    if (cooldownDisplaySetting < 1)
+                    if (cooldownDisplaySetting > 1)
                     {
                         return null;
                     }
